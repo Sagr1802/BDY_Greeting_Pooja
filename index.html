@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Pooja Di!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff6f91;
+      --secondary: #ff9671;
+      --accent: #ffc75f;
+      --dark: #845ec2;
+      --light: #fcefee;
+      --text: #333;
+      --text-light: #fff;
+      --card-bg: rgba(255, 255, 255, 0.85);
+      --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+      min-height: 100vh;
+      padding: 20px;
+      color: var(--text);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .container { max-width: 1400px; margin: 0 auto; }
+
+    header { text-align: center; padding: 30px 0; margin-bottom: 30px; animation: fadeIn 1.5s ease-out; position: relative; }
+
+    .heart { position: absolute; top: 20px; left: 20px; font-size: 2rem; color: var(--primary); animation: heartbeat 1.2s infinite; }
+    @keyframes heartbeat { 0%,50%,100%{transform:scale(1);} 25%,75%{transform:scale(1.2);} }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4.2rem;
+      color: var(--dark);
+      margin-bottom: 10px;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .age-badge {
+      display: inline-block; background: linear-gradient(to right, var(--primary), var(--dark));
+      color: white; padding: 6px 18px; border-radius: 30px; font-size: 1.4rem;
+      margin-top: 10px; box-shadow: 0 4px 15px rgba(123, 31, 162, 0.3);
+    }
+
+    .subtitle { font-size: 1.5rem; margin: 12px 0 20px; color: var(--dark); font-weight: 500; }
+
+    .message {
+      background: var(--card-bg); border-radius: 15px; padding: 30px;
+      max-width: 800px; margin: 0 auto 40px; box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      font-size: 1.1rem; line-height: 1.7; text-align: center; animation: slideUp 1s ease-out; position: relative;
+    }
+
+    .message::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 5px;
+      background: linear-gradient(to right, var(--primary), var(--secondary)); }
+
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px; }
+
+    .card {
+      background: white; border-radius: 15px; overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: var(--transition);
+      perspective: 1000px; cursor: pointer; height: 350px;
+    }
+    .card:hover { transform: translateY(-15px) scale(1.03); box-shadow: 0 20px 40px rgba(0,0,0,0.25); }
+
+    .card-inner { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform 0.8s; }
+    .card:hover .card-inner { transform: rotateY(180deg); }
+
+    .card-front, .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; }
+
+    .card-front { background: linear-gradient(45deg, #ffdde1, #ee9ca7); }
+    .card-back {
+      background: linear-gradient(45deg, #89f7fe, #66a6ff);
+      transform: rotateY(180deg); color: white; padding: 20px;
+      justify-content: center; align-items: center; text-align: center;
+    }
+
+    .card img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+    .card:hover img { transform: scale(1.05); }
+    .card h3 { font-size: 1.7rem; margin: 15px 0; color: white; font-family: 'Dancing Script', cursive; text-align: center; }
+
+    .card p { font-size: 1rem; padding: 0 15px; font-style: italic; line-height: 1.6; }
+
+    .music-player {
+      background: var(--card-bg); border-radius: 20px; padding: 25px; max-width: 600px; margin: 0 auto 30px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1); text-align: center; animation: slideUp 1.2s ease-out;
+    }
+    .music-player h2 { color: var(--dark); margin-bottom: 20px; font-family: 'Dancing Script', cursive; font-size: 2.5rem; }
+
+    footer { text-align: center; padding: 30px 0; font-size: 1.1rem; }
+    .signature { font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: var(--dark); margin-top: 10px; font-weight: bold; }
+
+    @keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+    @keyframes slideUp { from{opacity:0; transform:translateY(50px);} to{opacity:1; transform:translateY(0);} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="heart">💖</div>
+      <h1>Happy Birthday Pooja Di!</h1>
+      <div class="subtitle">Celebrating my sweetest Di in the world</div>
+      <div class="age-badge">Special Day</div>
+    </header>
+
+    <div class="message">
+      <p>Pooja Di, aap meri life ki sabse badi blessing ho. Sirf behen nahi, aap meri guide aur best friend bhi ho. Aapke bina zindagi adhoori lagti hai. Happy Birthday Di – hamesha khush raho, apni hasi muskaan se duniya roshan karo! 💖</p>
+    </div>
+
+    <div class="gallery">
+      <!-- 12 Cards Hinglish -->
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_1.jpg"><h3>Meri Guiding Star</h3></div><div class="card-back"><p>Pooja Di, aapne hamesha pyaar aur samajh se guide kiya hai. Thanks Di! 💕</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_2.jpg"><h3>Best Friend Forever</h3></div><div class="card-back"><p>Di, har situation me aap meri best friend rahi ho. Kabhi change mat hona! 🤗</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_3.jpg"><h3>Partner in Crime Di</h3></div><div class="card-back"><p>Bachpan ki shararat ya secrets – sab aapke saath best lagte hain Di! 😄</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_4.jpg"><h3>Meri Taqat</h3></div><div class="card-back"><p>Di, aapki strength mujhe roz inspire karti hai strong ban’ne ke liye. 💪</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_5.jpg"><h3>Care Queen</h3></div><div class="card-back"><p>Chahe main kitna bhi bada ho jaun, aapki care hamesha magical lagegi. 🥰</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_6.jpg"><h3>Hasi Ki Machine</h3></div><div class="card-back"><p>Di, aapki hasi meri life ka sabse beautiful soundtrack hai. 😍</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_7.jpg"><h3>Yaadein</h3></div><div class="card-back"><p>Har ek memory jo aapke saath hai, wo mere liye ek treasure hai. 💝</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_8.jpg"><h3>Unlimited Love</h3></div><div class="card-back"><p>Di, aapse bada pyaar aur bond duniya me aur kahin nahi milta. ❤️</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_9.jpg"><h3>Meri Support System</h3></div><div class="card-back"><p>Aap har mushkil me mere saath khadi rahi. Forever thankful Di! 🙏</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_10.jpg"><h3>Khushiyon Ki Dukan</h3></div><div class="card-back"><p>Di, jahan aap ho wahan khushi aur light apne aap aa jati hai. 🌟</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_11.jpg"><h3>Sapne Aur Ummeedein</h3></div><div class="card-back"><p>Di, dua hai aapke saare sapne aur wishes poore ho. ✨</p></div></div></div>
+
+      <div class="card"><div class="card-inner"><div class="card-front"><img src="pooja_12.jpg"><h3>Forever My Pooja Di</h3></div><div class="card-back"><p>Chahe duniya kuch bhi kahe, aap hamesha meri Di aur meri duniya rahogi. 💖</p></div></div></div>
+    </div>
+
+  <audio id="audio" src="birthday_song.mp3" autoplay loop></audio>
+
+<div class="music-player">
+  <h2>Birthday Song</h2>
+  <div class="now-playing">Playing: Happy Birthday Tune</div>
+  <div class="progress-container">
+    <div class="progress" id="progress"></div>
+  </div>
+  <div class="song-info">
+    <span id="currentTime">0:00</span>
+    <span id="duration">0:00</span>
+  </div>
+  <div class="controls">
+    <div class="play-btn" id="play-btn">
+      <i class="fas fa-play" id="playIcon"></i>
+    </div>
+  </div>
+</div>
+    <footer>
+      <p>Happy Birthday once again, meri sweet Pooja Di! 🎉</p>
+      <div class="signature">Your Brother Always 💝</div>
+    </footer>
+  </div>
+
+  <audio id="backgroundMusic" loop>
+    <source src="birthday_song.mp3">
+  </audio>
+
+  <script>
+    const playBtn=document.getElementById('play-btn');
+    const playIcon=document.getElementById('playIcon');
+    const progress=document.getElementById('progress');
+    const backgroundMusic=document.getElementById('backgroundMusic');
+    const currentTimeEl=document.getElementById('currentTime');
+    const durationEl=document.getElementById('duration');
+    let isPlaying=false;
+
+    function formatTime(seconds){
+      const min=Math.floor(seconds/60); const sec=Math.floor(seconds%60);
+      return `${min}:${sec<10?'0':''}${sec}`;
+    }
+
+    backgroundMusic.addEventListener('loadedmetadata',()=>{durationEl.textContent=formatTime(backgroundMusic.duration);});
+    backgroundMusic.addEventListener('timeupdate',()=>{
+      const percent=(backgroundMusic.currentTime/backgroundMusic.duration)*100;
+      progress.style.width=`${percent}%`; currentTimeEl.textContent=formatTime(backgroundMusic.currentTime);
+    });
+
+    playBtn.addEventListener('click',()=>{
+      if(isPlaying){ backgroundMusic.pause(); playIcon.className='fas fa-play'; }
+      else{ backgroundMusic.play().catch(e=>{}); playIcon.className='fas fa-pause'; }
+      isPlaying=!isPlaying;
+    });
+
+    document.querySelector('.progress-container').addEventListener('click',(e)=>{
+      const width=e.target.clientWidth; const clickX=e.offsetX; const duration=backgroundMusic.duration;
+      backgroundMusic.currentTime=(clickX/width)*duration;
+    });
+  </script>
+</body>
+</html>
